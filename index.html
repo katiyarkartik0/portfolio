@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Kartik Katiyar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Kartik Katiyar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Kartik Katiyar</h1>
+      <p class="section__text__p2">Full-Stack Web Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello, I'm Kartik Katiyar. I hold a degree in Engineering from Maharaja Agrasen Institute of Technology. My
+            expertise lies in frontend development, where I've worked extensively with ReactJS, HTML, JavaScript, and
+            Redux-toolkit. Additionally, I've had the privilege of serving as a Teaching Assistant for Java.
+            <br>
+
+            I take pride in being a proficient problem solver, achieving a 3-star rating on LeetCode and solving over
+            500 data structures and algorithms problems. I'm on a journey to become a Full-Stack Developer with a focus
+            on MERN technology, and I've already completed several projects showcasing my skills in frontend, backend,
+            and full-stack development using the MERN stack. My commitment is to create robust and user-centric
+            solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+  <section id="skills">
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>ReactJS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>NextJS</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Redux</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>API & Microservices</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+              <div>
+                <h3>Unit Testing</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Additional</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div>
+              <h3>Git & Github</h3>
+              <p>Professional</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div>
+              <h3>Java</h3>
+              <p>Advanced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div>
+              <h3>Data Structures</h3>
+              <p>Advanced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <div>
+              <h3>Algorithms</h3>
+              <p>Advanced</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="details-container">
+      <h3>VinSol (Vinayak Solutions Pvt. Ltd.)</h3>
+      <p>Apr-2022 to Feb-2023 <br />
+      <h1>Software Engineer Developer</h1>
+      </p>
+      <div class="professional-experience-container">
+        <ul>
+          <li>Coordinating with the web development team to develop user interfaces for client websites using
+            HTML,JavaScript,and React.JS</li>
+          <li>Worked on a live project called SnackMagic to develop features by making API calls, resolving bugs,
+            diagnosing root
+            causes and identifying solutions.</li>
+          <li>Used redux as a state management tool along with ReactJS to develop an interactive user interface.</li>
+          <li>Built a feature that reduced the time of order by the customer for repeating a past order.</li>
+          <li>Built a feature where customers can add products to a place called WISHLIST and can include them in the
+            cart later
+            on to order the product.</li>
+          <li>Converted old used class-based react components to latest function-based components in the code base.</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="details-container">
+      <h3>Pepcoding Education Pvt. Ltd.</h3>
+      <p>Apr-2021 to Sep-2021 <br />
+      <h1>Teaching Assistant</h1>
+      </p>
+      <div class="professional-experience-container">
+        <ul>
+          <li>Assisted students in understanding and debugging their JAVA code, ensuring adherence to best practices and
+            efficient
+            algorithms.</li>
+          <li>Provided comprehensive and accurate solutions to student queries related to data structures and algorithms
+            in
+            JAVA in one-on-one session.</li>
+        </ul>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/hive.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Hive:a chat app</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/katiyarkartik0/chat-app'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://hivechat.netlify.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/family-tree.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Family Registry App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/katiyarkartik0/family-tree/tree/main'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://katiyarkartik0.github.io/family-tree/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/RESUME-BUILDER.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Resume Builder</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/katiyarkartik0/Resume-Builder'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://resumebuilderkartik.netlify.app/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
