@@ -314,6 +314,14 @@ section {
   margin: auto 0;
 }
 
+.skill{
+  justify-content: space-between;
+}
+ 
+.skill-detail{
+  width: 12rem;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -335,6 +343,7 @@ section {
 
 .professional-experience-container{
   padding: 20px;
+  text-align: start;
 }
 
 .article-container {
@@ -355,6 +364,7 @@ article {
 
 article .icon {
   cursor: default;
+  left: 2px;
 }
 
 /* PROJECTS SECTION */
